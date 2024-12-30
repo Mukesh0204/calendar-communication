@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/calendar-communication/static/css/main.4bcfd024.css",
-    "main.js": "/calendar-communication/static/js/main.1ca585b3.js",
+    "main.css": "/calendar-communication/static/css/main.8e14a07f.css",
+    "main.js": "/calendar-communication/static/js/main.8075db9d.js",
     "index.html": "/calendar-communication/index.html",
-    "main.4bcfd024.css.map": "/calendar-communication/static/css/main.4bcfd024.css.map",
-    "main.1ca585b3.js.map": "/calendar-communication/static/js/main.1ca585b3.js.map"
+    "main.8e14a07f.css.map": "/calendar-communication/static/css/main.8e14a07f.css.map",
+    "main.8075db9d.js.map": "/calendar-communication/static/js/main.8075db9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bcfd024.css",
-    "static/js/main.1ca585b3.js"
+    "static/css/main.8e14a07f.css",
+    "static/js/main.8075db9d.js"
   ]
 }
