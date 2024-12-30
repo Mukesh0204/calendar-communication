@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/calendar-communication/static/css/main.41de13db.css",
+    "main.js": "/calendar-communication/static/js/main.eb5b5854.js",
+    "index.html": "/calendar-communication/index.html",
+    "main.41de13db.css.map": "/calendar-communication/static/css/main.41de13db.css.map",
+    "main.eb5b5854.js.map": "/calendar-communication/static/js/main.eb5b5854.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41de13db.css",
+    "static/js/main.eb5b5854.js"
+  ]
+}
