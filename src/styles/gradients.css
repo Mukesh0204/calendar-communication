@@ -1,0 +1,105 @@
+/* Animated Gradients */
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+.gradient-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+.gradient-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .8;
+  }
+}
+
+/* Theme-specific gradients */
+.theme-default {
+  --gradient-primary: linear-gradient(135deg, #4f46e5, #7c3aed, #9333ea);
+  --gradient-secondary: linear-gradient(135deg, #ec4899, #f43f5e, #ef4444);
+}
+
+.theme-ocean {
+  --gradient-primary: linear-gradient(135deg, #06b6d4, #14b8a6, #10b981);
+  --gradient-secondary: linear-gradient(135deg, #3b82f6, #4f46e5, #7c3aed);
+}
+
+.theme-sunset {
+  --gradient-primary: linear-gradient(135deg, #f97316, #e11d48, #9333ea);
+  --gradient-secondary: linear-gradient(135deg, #facc15, #f97316, #ef4444);
+}
+
+.theme-forest {
+  --gradient-primary: linear-gradient(135deg, #22c55e, #10b981, #14b8a6);
+  --gradient-secondary: linear-gradient(135deg, #84cc16, #22c55e, #10b981);
+}
+
+/* Gradient Cards */
+.gradient-card {
+  @apply relative overflow-hidden rounded-lg p-6 transition-all duration-300;
+}
+
+.gradient-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.gradient-card:hover::before {
+  opacity: 1;
+} 
